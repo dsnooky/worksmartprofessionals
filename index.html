@@ -3,12 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work Smart Professionals</title>
+
+<!-- SEO META -->
+<title>Work Smart Professionals | Smart Income Strategies for Professionals</title>
+<meta name="description" content="Work Smart Professionals helps busy professionals earn smarter through affiliate marketing, smart tools, and digital income strategies.">
+<meta name="keywords" content="affiliate marketing for professionals, side income ideas, smart income systems, passive income Philippines">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
     background:#f4f6f9;
     color:#333;
 }
@@ -22,7 +29,7 @@ header{
 
 nav{
     background:#1565c0;
-    padding:10px;
+    padding:12px;
     text-align:center;
 }
 
@@ -30,12 +37,12 @@ nav a{
     color:white;
     margin:0 15px;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:500;
 }
 
 section{
     padding:40px 20px;
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
 }
 
@@ -43,40 +50,43 @@ section{
     text-align:center;
 }
 
-.hero h1{
-    font-size:32px;
-    margin-bottom:10px;
-}
-
 .btn{
     display:inline-block;
-    padding:12px 20px;
+    padding:10px 18px;
     background:#0d47a1;
     color:white;
     text-decoration:none;
     border-radius:5px;
-    margin-top:15px;
+    margin-top:10px;
 }
 
-.card-container{
+.blog-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:20px;
 }
 
-.card{
+.blog-card{
     background:white;
     padding:20px;
-    border-radius:8px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.1);
-    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
+.blog-card h3{
+    margin-top:0;
+}
+
+.search-box{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    width:60%;
+    padding:10px;
     border-radius:5px;
+    border:1px solid #ccc;
 }
 
 footer{
@@ -86,25 +96,6 @@ footer{
     padding:15px;
     margin-top:30px;
 }
-
-input, textarea{
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-    border-radius:5px;
-    border:1px solid #ccc;
-}
-
-button{
-    margin-top:10px;
-    padding:10px 20px;
-    background:#1565c0;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
 </style>
 </head>
 
@@ -112,71 +103,78 @@ button{
 
 <header>
     <h1>Work Smart Professionals</h1>
-    <p>Helping Professionals Earn Smarter, Not Harder</p>
+    <p>Smart Systems. Smart Income. Smart Professionals.</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#products">Recommended Tools</a>
-    <a href="#join">Join Community</a>
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#tools">Tools</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-    <h1>Upgrade Your Income Strategy</h1>
-    <p>Smart tools. Smart systems. Smart professionals.</p>
-    <a href="https://facebook.com/YOURPAGE" class="btn" target="_blank">Visit Our Facebook Page</a>
+<section class="hero" id="home">
+    <h2>Upgrade Your Income Strategy</h2>
+    <p>Helping busy professionals create smarter income streams.</p>
+    <a href="https://facebook.com/YOURPAGE" class="btn" target="_blank">Join Our Facebook Community</a>
 </section>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-    Work Smart Professionals is a community dedicated to helping working professionals
-    build additional income streams using smart digital strategies, affiliate marketing,
-    and automated systems.
-    </p>
-</section>
+<section id="blog">
+    <h2>Latest Blog Articles</h2>
 
-<section id="products">
-    <h2>Recommended Tools & Products</h2>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search articles..." onkeyup="searchBlog()">
+    </div>
 
-    <div class="card-container">
+    <div class="blog-container" id="blogList">
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Product">
-            <h3>Smart Gadget #1</h3>
-            <p>Boost productivity and efficiency.</p>
-            <a href="#" class="btn">View Product</a>
+        <div class="blog-card">
+            <h3>How Busy Professionals Can Start Affiliate Marketing</h3>
+            <p>Step-by-step guide for working individuals who want additional income without quitting their job.</p>
+            <a href="blog1.html" class="btn">Read More</a>
         </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Product">
-            <h3>Office Essential #2</h3>
-            <p>Perfect for busy professionals.</p>
-            <a href="#" class="btn">View Product</a>
+        <div class="blog-card">
+            <h3>5 Smart Income Systems You Can Start This Year</h3>
+            <p>Discover scalable systems that generate income even while you're working full-time.</p>
+            <a href="blog2.html" class="btn">Read More</a>
         </div>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Product">
-            <h3>Digital Tool #3</h3>
-            <p>Automate your side income.</p>
-            <a href="#" class="btn">View Product</a>
+        <div class="blog-card">
+            <h3>Best Productivity Tools for Professionals</h3>
+            <p>Top recommended gadgets and digital tools to boost your efficiency.</p>
+            <a href="blog3.html" class="btn">Read More</a>
         </div>
 
     </div>
 </section>
 
-<section id="join">
-    <h2>Join Our Community</h2>
-    <p>Be part of professionals who choose smart income strategies.</p>
-    <a href="https://facebook.com/YOURPAGE" class="btn" target="_blank">Join on Facebook</a>
+<section id="tools">
+    <h2>Recommended Tools</h2>
+    <p>Carefully selected tools for professionals building smart income systems.</p>
+    <a href="#" class="btn">View Tools</a>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </for
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+</section>
+
+<footer>
+    © 2026 Work Smart Professionals | All Rights Reserved
+</footer>
+
+<script>
+function searchBlog(){
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".blog-card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+</script>
+
+</body>
+</html>
